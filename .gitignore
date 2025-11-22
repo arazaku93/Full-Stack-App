@@ -1,5 +1,10 @@
 # Environment variables
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
 
 # Dependencies
 node_modules/
@@ -7,8 +12,39 @@ node_modules/
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # OS files
 .DS_Store
 Thumbs.db
 
+# Vite
+frontend/dist/
+frontend/.vite/
+frontend/dist-ssr/
+frontend/*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and keys
+*.pem
+*.key
+*.cert
+secrets/
+.secrets/
+
+# Build outputs
+build/
+dist/
